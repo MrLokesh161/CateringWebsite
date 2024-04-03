@@ -39,6 +39,8 @@ h4, h5, h6, .h4, .h5, .h6 {
 .newfont {
     font-family: "Playfair Display", serif;
     font-style: Italic;
+    font-weight: bold;
+
 }
 .my-6 {
     margin-top: 6rem;
