@@ -1,15 +1,12 @@
 (function ($) {
     "use strict";
 
-    // Spinner
-    var spinner = function () {
-        setTimeout(function () {
-            if ($('#spinner').length > 0) {
-                $('#spinner').removeClass('show');
-            }
-        }, 1);
-    };
-    spinner(0);
+    // Hide spinner when page is fully loaded
+    window.addEventListener('load', function () {
+        var spinner = document.querySelector('.spinner');
+        spinner.style.display = 'none';
+    });
+  
     
     
     // Initiate the wowjs
