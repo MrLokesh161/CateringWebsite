@@ -13117,3 +13117,19 @@ a.remove-product {
     width: calc(100% - 20px); /* Adjusted width for smaller screens */
   }
 }
+
+
+
+.page-header2 {
+  text-align: center;
+}
+
+.page-header2 blockquote {
+  margin: 20px 0;
+}
+
+.page-header2 h2 {
+  font-size: 28px; /* Adjust size as needed */
+  font-style: italic;
+  color: #333333; /* Adjust color as needed */
+}
