@@ -14,6 +14,10 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Nunito:600,700"
       rel="stylesheet"
     />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
     <link rel="icon" href="Assets/logo2.png" sizes="32x32" />
     <link rel="icon" href="Assets/logo2.png" sizes="192x192" />
 
@@ -28,6 +32,7 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
       rel="stylesheet"
     />
+    
 
     <style>
       .shadow-image-gallery {
@@ -100,7 +105,7 @@
 
     <script>
       // Fetch data from the backend API
-      fetch("http://192.168.216.83:8000/api/gallery/")
+      fetch("http://64.227.134.220:8080/api/gallery/")
         .then((response) => response.json())
         .then((data) => {
           const galleryContainer = document.getElementById("gallery");
@@ -121,7 +126,7 @@
               "shadow-image-gallery",
             );
             const img = document.createElement("img");
-            img.src = "http://192.168.216.83:8000" + item.Image; // Prepend base URL to image URL
+            img.src = "http://64.227.134.220:8080" + item.Image; // Prepend base URL to image URL
             img.alt = item.Description; // Assuming 'Description' key holds image description
             img.classList.add("img-fluid");
             const figCaption = document.createElement("figcaption");
