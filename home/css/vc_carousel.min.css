@@ -9,6 +9,14 @@
     list-style: none;
     text-align: center;
   }
+  .vc_images_carousel,
+.vc_carousel {
+    height: 400px !important;
+    object-fit: cover;
+    overflow: hidden
+}
+
+
   .vc_images_carousel .vc_carousel-indicators li {
     display: inline-block;
     width: 10px;
@@ -85,8 +93,8 @@
     > img {
     display: block;
     max-width: 100%;
-    height: auto;
-    line-height: 1;
+    object-fit: cover; 
+    overflow: hidden
   }
   .vc_images_carousel.vc_per-view-more
     .vc_carousel-slideline
@@ -561,3 +569,12 @@
     margin: auto;
   }
   
+
+  .vc_images_carousel .vc_carousel-inner .vc_carousel-slideline .vc_carousel-slideline-inner > .vc_item > a > img,
+.vc_carousel .vc_carousel-inner .vc_carousel-slideline .vc_carousel-slideline-inner > .item > a > img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    line-height: 1;
+    object-fit: cover; /* Ensure the image fits the container */
+}

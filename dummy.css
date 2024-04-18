@@ -1,0 +1,123 @@
+
+.container-abt-custom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Center vertically */
+    max-width: 1200px; /* Limit container width */
+    margin: 0 auto; /* Center horizontally */
+    padding: 20px;
+}
+
+.left-column-abt-custom {
+    width: 50%;
+    padding: 20px;
+}
+
+.right-column-abt-custom {
+    width: 50%;
+    padding: 20px;
+    position: relative; /* Position relative for absolute positioning of arrows */
+}
+
+.carousel-abt-custom {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+}
+
+.carousel-slide-abt-custom {
+  display: none;
+}
+
+.carousel-slide-abt-custom.active {
+  display: block;
+}
+
+
+.carousel-slide-abt-custom img {
+    width: 100%;
+    height: 400px; /* Fixed height for images */
+    object-fit: cover; /* Maintain aspect ratio and fill container */
+}
+
+/* Style the heading and paragraph */
+.left-column-abt-custom h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.left-column-abt-custom p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Style the navigation arrows */
+.prev-button-abt-custom,
+.next-button-abt-custom {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: #333;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.prev-button-abt-custom {
+    left: 5%;
+}
+
+.next-button-abt-custom {
+    right: 5%;
+}
+
+.icons-home-abt-custom {
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    gap: 20px; /* Add gap between icons */
+}
+
+.icons-home-abt-custom a {
+    font-size: 24px; /* Adjust the size of the icons */
+}
+
+/* Set default color for icons */
+.icons-home-abt-custom a i {
+    color: grey;
+}
+
+/* Change color on hover */
+.icons-home-abt-custom a:hover i {
+    color: orange;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .container-abt-custom {
+        flex-direction: column; /* Change to a column layout on smaller screens */
+    }
+
+    .left-column-abt-custom, .right-column-abt-custom {
+        width: 100%; /* Full width for both columns on smaller screens */
+    }
+
+    .prev-button-abt-custom, .next-button-abt-custom {
+        font-size: 20px; /* Decrease the size of navigation buttons on smaller screens */
+    }
+
+    .carousel-slide-abt-custom img {
+        height: 300px; /* Decrease the height of images on smaller screens */
+    }
+
+    .icons-home-abt-custom a {
+        font-size: 20px; /* Decrease the size of icons on smaller screens */
+    }
+}
