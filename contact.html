@@ -130,8 +130,7 @@
               <p class="mb-4 nunito">Order Your Requirements.</p>
 
               <form
-                id="contactForm"
-                action="http://192.168.216.83:8000/api/contact/"
+                action="https://formspree.io/f/mleqalde"
                 method="POST"
               >
                 <input
@@ -202,8 +201,6 @@
                   <i class="fa fa-phone-alt fa-2x text-primary me-4"></i>
                   <div class="">
                     <h4 class="nunito">Telephone</h4>
-                    <p class="mb-2">(+91) 99945 00600</p>
-                    <p class="mb-2">(+91) 93426 30590</p>
                     <p class="mb-0">(+91) 90433 79043</p>
                   </div>
                 </div>
@@ -223,19 +220,23 @@
       <div class="custom-container">
         <div class="custom-row">
           <div class="footer-col-custom">
-            <h4 style="font-family: &quot;Playball&quot;, cursive !important">
+            <h4
+              style="font-family: &quot;Playball&quot;, cursive !important"
+            >
               Sai Aksharaiya Foods
             </h4>
             <p>
               At Sai Aksharaiya Foods, we are passionate about delivering
               delicious culinary experiences. Our commitment to quality and
-              innovation drives us to create memorable dishes that delight our
-              customers' taste buds. Come join us on a gastronomic journey and
-              experience the magic of Sai Aksharaiya Foods.
+              innovation drives us to create memorable dishes that delight
+              our customers' taste buds. Come join us on a gastronomic
+              journey and experience the magic of Sai Aksharaiya Foods.
             </p>
           </div>
           <div class="footer-col-custom">
-            <h4 style="font-family: &quot;Playball&quot;, cursive !important">
+            <h4
+              style="font-family: &quot;Playball&quot;, cursive !important"
+            >
               Navigation
             </h4>
             <ul>
@@ -248,14 +249,16 @@
             </ul>
           </div>
           <div class="footer-col-custom">
-            <h4 style="font-family: &quot;Playball&quot;, cursive !important">
+            <h4
+              style="font-family: &quot;Playball&quot;, cursive !important"
+            >
               follow us
             </h4>
             <div class="social-links-custom">
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://www.facebook.com/profile.php?id=61558321367511"><i class="fab fa-facebook-f"></i></a>
+              <!-- <a href="#"><i class="fab fa-twitter"></i></a>-->
+              <a href="https://www.instagram.com/saiaksharaiyafood?utm_source=qr&igsh=MXdsajhoNHc2aXJraw=="><i class="fab fa-instagram"></i></a>
+              <!--<a href="#"><i class="fab fa-linkedin-in"></i></a>-->
             </div>
           </div>
         </div>
@@ -281,43 +284,6 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
 
-    <script>
-      $(document).ready(function () {
-        $("#contactForm").submit(function (event) {
-          // Prevent default form submission
-          event.preventDefault();
-
-          // Get form data
-          var formData = {
-            name: $("input[name=name]").val(),
-            email: $("input[name=email]").val(),
-            phone: $("input[name=phone]").val(),
-            text: $("textarea[name=text]").val(),
-          };
-
-          // Send POST request to API endpoint
-          $.ajax({
-            type: "POST",
-            url: "http://64.227.134.220:8080/api/contact/",
-            data: JSON.stringify(formData),
-            contentType: "application/json",
-            success: function (response) {
-              // Handle success response
-              console.log("Success:", response);
-              alert("Your message has been successfully submitted!");
-              // Optionally, redirect the user to another page
-              // window.location.href = 'thank-you.html';
-            },
-            error: function (xhr, status, error) {
-              // Handle error response
-              console.error("Error:", error);
-              alert(
-                "An error occurred while submitting your message. Please try again later.",
-              );
-            },
-          });
-        });
-      });
-    </script>
+    
   </body>
 </html>
