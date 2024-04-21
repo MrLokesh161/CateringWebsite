@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Catalog-Z Bootstrap 5.0 HTML Template</title>
+    <title>Sai Aksharaiya Foods</title>
     <link rel="stylesheet" href="gallery/css/bootstrap.min.css" />
     <link rel="stylesheet" href="fontawesome/css/all.min.css" />
     <link rel="stylesheet" href="gallery/css/templatemo-style.css" />
@@ -105,7 +105,7 @@
 
     <script>
       // Fetch data from the backend API
-      fetch("https://64.227.134.220:8080/api/gallery/")
+      fetch("http://64.227.134.220:8005/api/gallery/")
         .then((response) => response.json())
         .then((data) => {
           const galleryContainer = document.getElementById("gallery");
@@ -126,7 +126,7 @@
               "shadow-image-gallery",
             );
             const img = document.createElement("img");
-            img.src = "https://64.227.134.220:8080" + item.Image; // Prepend base URL to image URL
+            img.src = "http://64.227.134.220:8005" + item.Image; // Prepend base URL to image URL
             img.alt = item.Description; // Assuming 'Description' key holds image description
             img.classList.add("img-fluid");
             const figCaption = document.createElement("figcaption");
