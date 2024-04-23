@@ -1567,3 +1567,17 @@ body {
     width: 100%;
   }
 }
+
+.contact-email-id {
+  margin-left: 50px;
+}
+@media (max-width: 767.98px) {
+  .contact-email-id{
+    margin-left: 0;
+  }
+}
+@media (max-width: 575px) {
+  .contact-email-id{
+    margin-left:0;
+  }
+}
