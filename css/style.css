@@ -171,7 +171,6 @@ a:focus {
     .navbar-light .navbar-nav .nav-link,
     .navbar-light .navbar-nav .nav-link:focus {
         padding: 10px 10px 8px 10px;
-        font-family: "PT Serif", serif;
         font-weight: 700;
         font-style: normal;
         color: #ffffff;
@@ -1282,11 +1281,13 @@ a:focus {
   }
   
   .team-member-image {
-    width: 100%;
+    width: 80%;
     margin-top: 0px;
     margin-right: 0px;
     margin-bottom: 40px;
     margin-left: 0px;
+    height: 300px;
+    border-radius: 80%;
   }
   
   .social-media-icon {
@@ -1580,4 +1581,8 @@ body {
   .contact-email-id{
     margin-left:0;
   }
+}
+
+.roboto-slab {
+  font-family: "Roboto Slab", serif;
 }
